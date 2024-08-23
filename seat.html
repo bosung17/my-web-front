@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12기 7반 자리</title>
+    <style>
+        .container > div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            /* width: 400px; */
+        }
+        /* #seat ~ .item {
+          display: flex;
+          order: -1;
+        }
+        .item:nth-child(1) ~ .item {
+          display: flex;
+          order: 1 !important;
+        } */
+        .item {
+            /* flex: 1 0 calc(100% / 6 - 10px); 6개의 아이템이 한 줄에 들어가도록 설정 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 4em;
+            height: 2em;
+            background-color: #4CAF50;
+            color: rgb(0, 0, 0);
+            margin: 5px; /* 아이템 간의 간격 조절 */
+            font-size: 20px;
+            border-radius: 20px; /* 모서리를 둥글게 */
+        }
+        .item:nth-child(6n + 3) {
+            background-color: #ffffff !important;
+        }
+        #blank {
+          width: 2em;
+        }
+        .row0 .item {
+          background-color: lightcoral;
+        }
+        .row1 .item {
+          background-color: rgb(252, 255, 97);
+        }
+        .row2 .item {
+          background-color: rgb(90, 235, 162);
+        }
+        .row3 .item {
+          background-color: rgb(83, 239, 250);
+        }
+        .row4 .item {
+          background-color: rgb(148, 84, 233);
+        }
+        .row5 .item {
+          background-color: rgb(252, 146, 234);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row0">
+      <div class="item">혜원K.</div>
+      <div class="item">인애</div>
+      <div class="item" id="blank"></div>
+      <div class="item">보성</div>
+      <div class="item">윤준</div>
+      <div class="item">성현</div>
+    </div>
+    <div class="row1">
+      <div class="item">지운</div>
+      <div class="item">　</div>
+      <div class="item" id="blank"></div>
+      <div class="item">준환</div>
+      <div class="item">서하</div>
+      <div class="item">승빈</div>
+    </div>
+    <div class="row2">
+      <div class="item">민서</div>
+      <div class="item">현수</div>
+      <div class="item" id="blank"></div>
+      <div class="item">서현</div>
+      <div class="item">혁규</div>
+      <div class="item">장한</div>
+    </div>
+    <div class="row3">
+      <div class="item">홍균</div>
+      <div class="item">재현</div>
+      <div class="item" id="blank"></div>
+      <div class="item">혜원L.</div>
+      <div class="item">엘사</div>
+      <div class="item">진호</div>
+    </div>
+    <div class="row4">
+      <div class="item">정우</div>
+      <div class="item">혜민</div>
+      <div class="item" id="blank"></div>
+      <div class="item">희주</div>
+      <div class="item">유영</div>
+      <div class="item">은서</div>
+    </div>
+    <div class="row5">
+      <div class="item">　</div>
+      <div class="item">　</div>
+      <div class="item" id="blank"></div>
+      <div class="item">　</div>
+      <div class="item">　</div>
+      <div class="item">　</div>
+    </div>
+</div>
+
+</body>
+</html>

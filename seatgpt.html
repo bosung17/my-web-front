@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6x6 Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* 6개의 열 생성 */
+            gap: 10px;
+            width: 500px; /* 전체 그리드의 너비 */
+            margin: 0 auto; /* 가운데 정렬 */
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3.66em; /* 각 아이템의 높이 */
+            background-color: #4CAF50; /* 아이템 배경색 */
+            color: white;
+            font-size: 20px;
+            border-radius: 8px; /* 모서리를 둥글게 */
+        }
+
+        /* 복도를 표시하기 위한 스타일 */
+        .item:nth-child(6n+3) {
+            background-color: #ffffff;
+        }
+
+        /* seat 아이템의 위치를 제어 */
+        #seat {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 36개의 아이템 생성 -->
+    <div class="item" id="seat">seat</div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+
+</body>
+</html>
